@@ -67,13 +67,43 @@
 //Console.WriteLine("=============================");
 //Console.WriteLine();
 
-Product product = new Product(10, 5, 2, 20);
+//Product product = new Product(10, 5, 2, 20);
 
-product.Specs();
+//product.Specs();
 
-Console.WriteLine();
-Console.WriteLine("=============================");
-Console.WriteLine();
+//Console.WriteLine();
+//Console.WriteLine("=============================");
+//Console.WriteLine();
+
+Person person = new Person();
+
+Console.WriteLine("Enter your name!");
+string name = Console.ReadLine();
+
+Console.WriteLine("Enter your surname!");
+string surname = Console.ReadLine();
+
+Console.WriteLine("Enter your birth date in following format dd.mm.yyyy!");
+string birthDateText = Console.ReadLine();
+DateTime birthDate = DateTime.Parse(birthDateText);
+
+Console.WriteLine("What is your hobby!");
+string hobby = Console.ReadLine();
+
+Console.WriteLine("What is your gender - male or female?");
+bool gender = Console.ReadLine().StartsWith('m');
+
+
+person.Name = name;
+person.Surname = surname;
+person.BirthDate = birthDate;
+person.Hobby = hobby;
+person.Gender = gender;
+
+person.GetAge();
+
+person.Greeting();
+
 
 
 
