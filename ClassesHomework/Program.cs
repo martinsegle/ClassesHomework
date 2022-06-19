@@ -8,17 +8,21 @@ string telephoneModel = Console.ReadLine();
 
 Console.WriteLine("Ievadi sava telefona garumu!");
 string telephoneLenghtText = Console.ReadLine();
-int telephoneLenght = int.Parse(telephoneLenghtText);
+double telephoneLenght = double.Parse(telephoneLenghtText);
 
 Console.WriteLine("Ievadi sava telefona platumu!");
 string telephoneWidthText = Console.ReadLine();
-int telephoneWidth = int.Parse(telephoneWidthText);
+double telephoneWidth = double.Parse(telephoneWidthText);
 
 Console.WriteLine("Ievadi sava telefona augstumu!");
 string telephoneHightText = Console.ReadLine();
-int telephoneHight = int.Parse(telephoneHightText);
+double telephoneHight = double.Parse(telephoneHightText);
 
-Telephone telephone = new Telephone();
+Console.WriteLine("Kam Tu vēlies piezvanīt (ievadi tālr.nr.)?");
+string phoneNumber = Console.ReadLine();
+
+
+Telephone telephone = new Telephone(telephoneBrand);
 
 telephone.TelephoneBrand = telephoneBrand;
 telephone.TelephoneModel = telephoneModel;
@@ -26,13 +30,41 @@ telephone.TelephoneLenght = telephoneLenght;
 telephone.TelephoneWidth = telephoneWidth;
 telephone.TelephoneHight = telephoneHight;
 
-telephone.Call("12345678");
+telephone.Call(phoneNumber);
 
-telephone.SendSMS("12345678");
+telephone.SendSMS(phoneNumber);
 
 Console.WriteLine();
 Console.WriteLine("=============================");
 Console.WriteLine();
+
+Console.WriteLine("Ievadi automašīnas marku!");
+string carBrand = Console.ReadLine();
+
+Console.WriteLine("Ievadi automašīnas numurzīmi!");
+string carLicensePlate = Console.ReadLine();
+
+Console.WriteLine("Ievadi automašīnas ātrumu!");
+string carSpeedText = Console.ReadLine();
+double carSpeed = double.Parse(carSpeedText);
+
+
+Car car = new Car();
+
+car.CarBrand = carBrand;
+car.CarLicensePlate = carLicensePlate;
+car.CarSpeed = carSpeed;
+
+car.StartToDrive();
+car.IncreaseSpeed();
+car.DecreaseSpeed();
+car.StopToDrive();
+car.Horn();
+
+Console.WriteLine();
+Console.WriteLine("=============================");
+Console.WriteLine();
+
 
 
 
