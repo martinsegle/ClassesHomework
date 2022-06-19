@@ -38,30 +38,38 @@
 //Console.WriteLine("=============================");
 //Console.WriteLine();
 
-Console.WriteLine("Ievadi automašīnas marku!");
-string carBrand = Console.ReadLine();
+//Console.WriteLine("Ievadi automašīnas marku!");
+//string carBrand = Console.ReadLine();
 
-Console.WriteLine("Ievadi automašīnas numurzīmi!");
-string carLicensePlate = Console.ReadLine();
+//Console.WriteLine("Ievadi automašīnas numurzīmi!");
+//string carLicensePlate = Console.ReadLine();
 
-Console.WriteLine("Ievadi automašīnas ātrumu!");
-string carSpeedText = Console.ReadLine();
-double carSpeed = double.Parse(carSpeedText);
+//Console.WriteLine("Ievadi automašīnas ātrumu!");
+//string carSpeedText = Console.ReadLine();
+//double carSpeed = double.Parse(carSpeedText);
 
-bool isSpeed = carSpeed > 0;
+//bool isSpeed = carSpeed > 0;
 
-Car car = new Car();
+//Car car = new Car();
 
-car.CarBrand = carBrand;
-car.CarLicensePlate = carLicensePlate;
-car.CarSpeed = carSpeed;
-car.IsSpeed = isSpeed;
+//car.CarBrand = carBrand;
+//car.CarLicensePlate = carLicensePlate;
+//car.CarSpeed = carSpeed;
+//car.IsSpeed = isSpeed;
 
-car.StartToDrive();
-car.IncreaseSpeed();
-car.DecreaseSpeed();
-car.StopToDrive();
-car.Horn();
+//car.StartToDrive();
+//car.IncreaseSpeed();
+//car.DecreaseSpeed();
+//car.StopToDrive();
+//car.Horn();
+
+//Console.WriteLine();
+//Console.WriteLine("=============================");
+//Console.WriteLine();
+
+Product product = new Product(10, 5, 2, 20);
+
+product.Specs();
 
 Console.WriteLine();
 Console.WriteLine("=============================");
