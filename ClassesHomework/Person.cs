@@ -16,7 +16,7 @@ namespace ClassesHomework
 
         public void Greeting()
         {
-            Console.WriteLine($"Hello, my name is {Name} {Surname} and I am {BirthDate} years old");
+            Console.WriteLine($"Hello, my name is {Name} {Surname} and I am {GetAge()} years old");
         }
 
 
